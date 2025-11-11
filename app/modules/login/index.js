@@ -9,8 +9,8 @@ import { StackActions, useNavigation } from '@react-navigation/native'
 
 const Login = () => {
   const navigation = useNavigation()
-  const [username, setUsername] = useState('yosi@gmail.com')
-  const [password, setPassword] = useState('password')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
   
   const dispatch = useAppDispatch()
   const { isLoading, error } = useAppSelector((state) => state.auth)

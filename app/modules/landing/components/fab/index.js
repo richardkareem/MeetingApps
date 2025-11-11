@@ -27,7 +27,7 @@ const Fab = () => {
         visible
         actions={[
             {
-            icon: 'star',
+            icon: 'logout-variant',
             label: 'Logout',
             onPress: ()=> onLogout(),
             },
@@ -37,7 +37,7 @@ const Fab = () => {
             onPress: () => nav('CreateMeeting'),
             },
             {
-            icon: 'bell',
+            icon: 'magnify',
             label: 'Find',
             onPress: () => nav('FindMeeting'),
             },

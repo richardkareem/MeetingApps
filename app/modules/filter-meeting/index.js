@@ -22,8 +22,8 @@ const FindMeeting = ({ onSearch }) => {
       room: room || null,
       date: date?.toISOString() || null,
     };
-    setDatas(prev => {
-      return prev.filter(x => x.nama_ruangan === payload.room)
+    setDatas(() => {
+      return meetings.filter(x => x.nama_ruangan === payload.room)
     })
     if (onSearch) onSearch(payload);
     else console.log('FindMeeting filter:', payload);
