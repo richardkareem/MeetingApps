@@ -1,0 +1,1 @@
+export const BASE_URL = "https://uat-api.ftlgym.com/api/v1/test/"
